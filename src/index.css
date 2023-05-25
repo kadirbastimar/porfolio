@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar {
+    width: 0.75em; /* Remove scrollbar space */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: slategrey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    outline: 1px solid slategrey;
+}
+
+/*
+'*::-webkit-scrollbar': {
+    width: '0.4em'
+  },
+  '*::-webkit-scrollbar-track': {
+    '-webkit-box-shadow': 'inset 0 0 6px rgba(0,0,0,0.00)'
+  },
+  '*::-webkit-scrollbar-thumb': {
+    backgroundColor: 'rgba(0,0,0,.1)',
+    outline: '1px solid slategrey'
+  }
+*/
+
+#right-bottom {
+    scroll-behavior: smooth;
+}
+
+/**/
+
+.bounce {
+    animation: shake 1.5s linear both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
